@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SelectComands {
+public class SelectCommands {
 	
 	public static List getDatabases() throws SQLException {
 		PreparedStatement stmt = ConnectionDb.ConnectDb().prepareStatement("select * from pg_database;");
